@@ -1,0 +1,125 @@
+create table users(
+name varchar(50),
+email varchar(50) primary key,
+phoneno varchar(10),
+password varchar(20));
+
+
+create table search(
+uqname varchar(30),
+name varchar(70),
+var1 varchar(20),
+var2 varchar(70),
+var3 varchar(70),
+var4 varchar(70),
+var5 varchar(70));
+
+insert into search values('shoes for men','Bouncer-05 Running shoes','459','Black color','Size-10','','');
+insert into search values('shoes for women','Casual wear Lace-Up Shoes Boots','399','Pink color','Size-8','','');
+insert into search values('top wear for men','Color Block Men Round Neck Black T-Shirt','599','Color - Black-white','Size-L','','');
+insert into search values('top wear for women','Women Fit and Flare Black Dress','1199','Black color','Size-M',,'','');
+insert into search values('bottom wear for men','Solid Men Blue Track Pants','499','Blue color','Size-L','','');
+insert into search values('bottom wear for women','Skinny Women Black Jeans','767','Black color','Size-30','','');
+insert into search values('medikit','Oximeter','3999','Black color','fingertip','NA','');
+insert into search values('medikit','OMRON HEM-7120 Bp Monitor','2299','White color','Upper Arm','3 years','');
+insert into search values('medikit','ACCU-CHEK Active Glucose Monitor','1599','Black color','0.6 mmol/L - 33.3 mmol/L','NA','');
+insert into search values('laptop','APPLE MacBook Air M1','92900','Gold color','8 GB/256 GB SSD/Mac OS Big Sur','13.3 inch Quad LED Backlit IPS Display','Apple M1 Chip');
+insert into search values('ipad','APPLE iPad Air (4th Gen)','54900','Sky Blue','64 GB ROM','27.69 cm (10.9 inch) Full HD Display','Processor: A14 Bionic Chip (64‑bit Architecture)');
+insert into search values('laptop','ASUS ZenBook 13','75990','Silver color','8 GB/512 GB SSD/Windows 10 Home','Full HD LED Backlit Wideview NanoEdge Display','Core i5 10th Gen');
+insert into search values('ipad','HP Pavilion','68990','Ceramic White color','16 GB/512 GB SSD/Windows 10 Home','Full HD LED Backlit Anti-glare IPS Micro-edge Display','Core i5 11th Gen');
+insert into search values('mobile','APPLE iPhone 11','56999','128 GB ROM','15.49 cm (6.1 inch) Liquid Retina HD Display','12MP + 12MP | 12MP Front Camera','A13 Bionic Chip Processor');
+insert into search values('mobile','realme X7 Pro','28499','8 GB RAM | 128 GB ROM','16.64 cm (6.55 inch) Full HD+ Display','64MP + 8MP + 2MP + 2MP | 32MP Front Camera','MediaTek Dimensity 1000 Plus Processor');
+insert into search values('mobile','Apple iPhone XR','46999','8 GB | 126 GB','15.49 cm (6.1 inch) Display','12MP Rear Camera | 7MP Front Camera','A12 Bionic Chip Processor');
+insert into search values('mobile','realme X50 Pro','30999','12 GB RAM | 256 GB ROM','16.36 cm (6.44 inch) Full HD+ Display','64MP + 12MP + 8MP + 2MP | 32MP + 8MP Dual Front Camera','Qualcomm Snapdragon 865 Processor');
+insert into search values('mobile','POCO X3 Pro','18999','6 GB RAM | 128 GB ROM','16.94 cm (6.67 inch) Full HD+ Display','48MP + 8MP + 2MP + 2MP | 20MP Front Camera','Qualcomm Snapdragon 860 Processor');
+insert into search values('fridge','Whirlpool 570 L Refrigerator','61990','Silver color','Side by Side Refrigerator','570 L','');
+insert into search values('Washing Machine','SAMSUNG 8/6 kg Washing Machine','55000','Grey color','Washer with Dryer','8 kg','');
+insert into search values('AC','LG Dual Inverter AC with Wi-fi Connect','55990','White color','Split','1.5 Ton','');
+insert into search values('Microwave','SAMSUNG 35 L Convection Microwave Oven','28209','Silver color','Touch Key Pad (Membrane)','35 L','');
+
+
+
+
+create table fashion(
+productid varchar(6) primary key,
+name varchar(50),
+price number(10),
+color varchar(30),
+sizes varchar(10));
+
+insert into fashion values(100111,'Bouncer-05 Running shoes','459','Black color','Size-10');
+insert into fashion values(100112,'Casual wear Lace-Up Shoes Boots','399','Pink color','Size-8');
+insert into fashion values(100113,'Color Block Men Round Neck Black T-Shirt','599','Color - Black-white','Size-L');
+insert into fashion values(100114,'Women Fit and Flare Black Dress','1199','Black color','Size-M');
+insert into fashion values(100115,'Solid Men Blue Track Pants','499','Blue color','Size-L');
+insert into fashion values(100116,'Skinny Women Black Jeans','767','Black color','Size-30');
+
+
+create table medicine(
+productid varchar(6) primary key,
+name varchar(50),
+price number(10),
+color varchar(30),
+type varchar(30),
+warranty varchar(10));
+
+insert into medicine values(100121,'Oximeter','3999','Black color','fingertip','NA');
+insert into medicine values(100122,'OMRON HEM-7120 Bp Monitor','2299','White color','Upper Arm','3 years');
+insert into medicine values(100123,'ACCU-CHEK Active Glucose Monitor','1599','Black color','0.6 mmol/L - 33.3 mmol/L','NA');
+
+
+create table electronics(
+productid varchar(6) primary key,
+name varchar(30),
+price number(10),
+color varchar(30),
+config varchar(60),
+display varchar(60),
+processor varchar(60));
+
+insert into electronics values(100131,'APPLE MacBook Air M1','92900','Gold color','8 GB/256 GB SSD/Mac OS Big Sur','13.3 inch Quad LED Backlit IPS Display','Apple M1 Chip');
+insert into electronics values(100132,'APPLE iPad Air (4th Gen)','54900','Sky Blue','64 GB ROM','27.69 cm (10.9 inch) Full HD Display','Processor: A14 Bionic Chip (64‑bit Architecture)');
+insert into electronics values(100133,'ASUS ZenBook 13','75990','Silver color','8 GB/512 GB SSD/Windows 10 Home','Full HD LED Backlit Wideview NanoEdge Display','Core i5 10th Gen');
+insert into electronics values(100134,'HP Pavilion','68990','Ceramic White color','16 GB/512 GB SSD/Windows 10 Home','Full HD LED Backlit Anti-glare IPS Micro-edge Display','Core i5 11th Gen');
+
+
+
+create table mobiles(
+productid varchar(6) primary key,
+name varchar(30),
+price number(10),
+ram_rom varchar(40),
+display varchar(60),
+camera varchar(60),
+processor varchar(60));
+
+insert into mobiles values(100141,'APPLE iPhone 11','56999','128 GB ROM','15.49 cm (6.1 inch) Liquid Retina HD Display','12MP + 12MP | 12MP Front Camera','A13 Bionic Chip Processor');
+insert into mobiles values(100142,'realme X7 Pro','28499','8 GB RAM | 128 GB ROM','16.64 cm (6.55 inch) Full HD+ Display','64MP + 8MP + 2MP + 2MP | 32MP Front Camera','MediaTek Dimensity 1000 Plus Processor');
+insert into mobiles values(100143,'Apple iPhone XR','46999','8 GB | 126 GB','15.49 cm (6.1 inch) Display','12MP Rear Camera | 7MP Front Camera','A12 Bionic Chip Processor');
+insert into mobiles values(100144,'realme X50 Pro','30999','12 GB RAM | 256 GB ROM','16.36 cm (6.44 inch) Full HD+ Display','64MP + 12MP + 8MP + 2MP | 32MP + 8MP Dual Front Camera','Qualcomm Snapdragon 865 Processor');
+insert into mobiles values(100145,'POCO X3 Pro','18999','6 GB RAM | 128 GB ROM','16.94 cm (6.67 inch) Full HD+ Display','48MP + 8MP + 2MP + 2MP | 20MP Front Camera','Qualcomm Snapdragon 860 Processor');
+
+
+create table home_applience(
+productid varchar(6) primary key,
+name varchar(50),
+price number(10),
+color varchar(20),
+type varchar(40),
+capacity varchar(10));
+
+insert into home_applience values(100151,'Whirlpool 570 L Refrigerator','61990','Silver color','Side by Side Refrigerator','570 L');
+insert into home_applience values(100152,'SAMSUNG 8/6 kg Washing Machine','55000','Grey color','Washer with Dryer','8 kg');
+insert into home_applience values(100153,'LG Dual Inverter AC with Wi-fi Connect','55990','White color','Split','1.5 Ton');
+insert into home_applience values(100154,'SAMSUNG 35 L Convection Microwave Oven','28209','Silver color','Touch Key Pad (Membrane)','35 L');
+
+
+
+create table cart(
+email varchar(30),
+productid varchar(6),
+name varchar(50),
+price number(10),
+quantity number(10),
+total number(10));
+
